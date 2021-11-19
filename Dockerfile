@@ -4,10 +4,8 @@
 # https://github.com/jlesage/docker-baseimage-gui
 #
 
-ARG BASEIMAGE=ubuntu:ubuntu-18.04
-
 # Pull base image.
-FROM ${BASEIMAGE}
+FROM ubuntu:ubuntu-18.04
 
 # Define software versions.
 ARG LIBVNCSERVER_VERSION=9029b86
@@ -247,12 +245,3 @@ ENV DISPLAY=:0 \
 #   - 5800: VNC web interface
 #   - 5900: VNC
 EXPOSE 5800 5900
-
-# Metadata.
-ARG IMAGE_VERSION=unknown
-LABEL \
-      org.label-schema.name="baseimage-gui" \
-      org.label-schema.description="A minimal docker baseimage to ease creation of X graphical application containers" \
-      org.label-schema.version="${IMAGE_VERSION}" \
-      org.label-schema.vcs-url="https://github.com/jlesage/docker-baseimage-gui" \
-      org.label-schema.schema-version="1.0"
