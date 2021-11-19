@@ -4,7 +4,7 @@
 # https://github.com/jlesage/docker-baseimage-gui
 #
 
-ARG BASEIMAGE=unknown
+ARG BASEIMAGE=ubuntu:ubuntu-18.04
 
 # Pull base image.
 FROM ${BASEIMAGE}
