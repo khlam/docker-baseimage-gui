@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:ubuntu-18.04
+FROM ubuntu:18.04
 
 # Define software versions.
 ARG LIBVNCSERVER_VERSION=9029b86
